@@ -71,5 +71,8 @@ Expected Output:
 365
 
 */ 
-
-let statusReg = /write your regex here/
+// i tried doing this the simple way and it would not work, i checked the solution code and that did not help. this was the only way i was able to make it console log the actual approval correctly
+let statusReg = /status: (\w+)/i
+let statusText = sampleApp.match(statusReg);
+console.log("Status:", statusText ? statusText[1] : "Not found");
+// you like that ternary ;)
