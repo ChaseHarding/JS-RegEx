@@ -52,8 +52,11 @@ Expected Output:
 - Note: Your terminal might also display the index, input, and groups of the match. If so, that's okay!
 
 */ 
-
-let emailReg = /write your regex here/
+// let emailReg = /[a-zA-Z0-9._%+-]+@[a-zA-Z]+\.[a-zA-Z]{2,}/g;
+// this was how i wrote this before checking the solution and seeing the reference for shorthands. glad to see "w" exists, thats a time saver
+let emailReg = /\w+@[a-zA-Z]+\.[a-zA-Z]{2,}/g
+let emailSample = sampleApp.match(emailReg)
+console.log(emailSample)
 
 /* 
 
